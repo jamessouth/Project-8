@@ -4,25 +4,25 @@
       <meta charset="utf-8">
       <link href="css/styles.css" rel="stylesheet" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
       <title>Accessible Frog</title>
   </head>
 
   <body>
-    <div class="main-nav">
+    <nav role="navigation" class="main-nav">
       <ul class="nav">
         <li class="name"><a href="#">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="survey.html">Survey</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <header>
+    <header role="banner">
 		<h1>accessible frog</h1>
 		<p>we make awesome music</p>
     </header>
 
-    <main>
+    <main role="main">
       <div class="card">
         <div class="flex">
           <img class="photo" alt="album cover" src= "img/soul_of_the_frog.jpg">
@@ -46,7 +46,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" alt="our twitter" class="social twitter"></a></li>
         <li><a href="#" alt="our youtube" class="social youtube"></a></li>
