@@ -11,14 +11,43 @@ form {
   display: inline-block;
 }
 
+
+
+
 .container{
-  text-align: center;
+  text-align: left;
+  max-width: 282px;
+  margin: auto;
+}
+
+.container2{
+  text-align: right;
+  max-width: 180px;
+  margin: auto;
 }
 .newsletter{
   text-align: right;
-
 }
 
+fieldset{
+	border: none;
+	margin-top: 1em;
+}
+
+legend{
+	text-align: center;
+}
+
+.sally{
+	display: inline-block;
+}
+
+@media screen and (min-width: 368px) {
+		.container2{
+			max-width: 282px;
+		}
+
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
