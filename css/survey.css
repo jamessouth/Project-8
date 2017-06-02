@@ -42,6 +42,20 @@ legend{
 	display: inline-block;
 }
 
+input[type="radio"]:focus+label{
+	color: white;
+	text-transform: uppercase;
+}
+select:focus{
+	border-width: 10px;
+	border-radius: 20px;
+}
+
+#radioinput1, #radioinput2, #radioinput3, #radioinput4, #selectinput,
+#textareainput, #nameinput, #emailinput, #retypeemailinput, #buttoninput{
+	display: none;
+}
+
 @media screen and (min-width: 368px) {
 		.container2{
 			max-width: 282px;
