@@ -11,9 +11,6 @@ form {
   display: inline-block;
 }
 
-
-
-
 .container{
   text-align: left;
   max-width: 282px;
@@ -38,6 +35,15 @@ legend{
 	text-align: center;
 }
 
+.radiofs{
+	padding: 0;
+	margin: 0;
+}
+
+.radiogp{
+	text-align: left;
+}
+
 .sally{
 	display: inline-block;
 }
@@ -46,9 +52,39 @@ input[type="radio"]:focus+label{
 	color: white;
 	text-transform: uppercase;
 }
-select:focus{
-	border-width: 10px;
-	border-radius: 20px;
+
+select, textarea{
+	border: 5px solid transparent;
+	transition: all .5s;
+}
+
+select:focus, textarea:focus{
+	border: 5px solid #bcf980;
+	border-radius: 10px;
+	background-color: blue;
+	color: white;
+}
+
+textarea:focus::-webkit-input-placeholder{
+	color: white;
+}
+
+textarea:focus::-moz-placeholder{
+	color: white;
+}
+
+input[type="text"], input[type="email"]{
+	transition: all .5s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+	background-color: blue;
+	border: 2px solid red;
+	color: white;
+}
+
+button:focus{
+	box-shadow: 0 0 20px 13px orange;
 }
 
 #radioinput1, #radioinput2, #radioinput3, #radioinput4, #selectinput,
@@ -60,7 +96,6 @@ select:focus{
 		.container2{
 			max-width: 282px;
 		}
-
 }
 
 /* Styles for larger screens */
