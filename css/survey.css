@@ -32,6 +32,10 @@ fieldset{
 }
 
 legend{
+	width: 100%;
+}
+
+legend h1{
 	text-align: center;
 }
 
@@ -90,6 +94,10 @@ button:focus{
 #radioinput1, #radioinput2, #radioinput3, #radioinput4, #selectinput,
 #textareainput, #nameinput, #emailinput, #retypeemailinput, #buttoninput{
 	display: none;
+}
+
+.radiogp{
+	padding-bottom: 1em;
 }
 
 @media screen and (min-width: 368px) {
